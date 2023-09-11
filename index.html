@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./build/output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>vice generator app</title>
+  </head>
+  <body class="bg-dBlue">
+    <div class="h-screen flex justify-center items-center px-5">
+      <div
+        class="bg-dgBlue rounded-lg px-4 lg:px-8 text-center py-14 max-w-sm sm:max-w-md md:max-w-lg relative"
+      >
+        <h1
+          class="uppercase text-nGreen tracking-[.30em] mb-5 font-medium text-sm"
+        >
+          vice <span id="number">???</span>
+        </h1>
+        <p
+          id="quotes"
+          class="text-2xl md:text-[1.75rem] leading-normal font-manrope text-lCyan mb-7"
+        >
+          Wait!
+        </p>
+        <div class="lg:mb-5">
+          <img
+            src="./images/pattern-divider-mobile.svg"
+            alt="pattern-divider-mobile"
+            class="mx-auto w-full md:hidden"
+          />
+          <img
+            src="./images/pattern-divider-desktop.svg"
+            alt="pattern-divider-desktop"
+            class="mx-auto w-full hidden md:block"
+          />
+        </div>
+        <button
+          id="dice"
+          onclick="dice()"
+          class="bg-nGreen w-[55px] h-[55px] lg:w-[64px] lg:h-[64px] rounded-full absolute left-0 right-0 mx-auto -bottom-7 lg:-bottom-8 hover:animate-spin hover:shadow-neon transition duration-300 ease-in-out"
+        >
+          <img src="./images/icon-dice.svg" alt="icon-dice" class="mx-auto" />
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
